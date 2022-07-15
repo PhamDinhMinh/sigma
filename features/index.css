@@ -1,0 +1,100 @@
+/* file qui định chung biến màu,biến boder, ..  */
+/* Vì file chung nên có những thứ chung như class, màu thì mọi người nên thêm vào đây sau import và file css riêng */
+
+/* cách dùng biến trong css: https://www.w3schools.com/css/css3_variables.asp */
+:root {
+  --card-bg-color: #fdfdfd;
+  --second-bg-color: #ffffff;
+  --primary-bg-color: #ffffff;
+  --footer-bg-color: #414141;
+
+  --text-header-color: #11152a;
+  --text-primary-color: #1b1f3b;
+  --primary-color: #5a26ed;
+  --primary-color-letter:#000;
+  --primary-hover-color: #6f7cf3;
+
+  --checkbox-border-radius: 3px;
+  --btn-border-radiuss: 6px;
+  --input-boder-radius: 8px;
+  --image-border-radius: 12px;
+  --card-border-radius: 24px;
+  --lg-boder-radius: 55px;
+  --circle-btn-border-radius: 30px;
+  --border-content-block: 20px;
+}
+
+/* dark theme variable */
+[data-theme="dark"] {
+  --card-bg-color: #31323e;
+  --second-bg-color: #222330;
+  --primary-bg-color: #191a23;
+  --footer-bg-color: #0d0d10;
+
+  --text-header-color: #ffffff;
+  
+  --text-primary-color: #c9c9c9;
+  --primary-color: #6c55f9;
+  --primary-hover-color: #8853fb;
+}
+
+/* cách import font-family : https://www.w3schools.com/css/css3_fonts.asp */
+@font-face {
+  font-family: Roboto_Black;
+  src: url(../assets/fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: Roboto_BlackItalic;
+  src: url(../assets/fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_Bold;
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto_BoldItalic;
+  src: url(../assets/fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_Italic;
+  src: url(../assets/fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: Roboto_Light;
+  src: url(../assets/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: Roboto_LightItalic;
+  src: url(../assets/fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_Medium;
+  src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto_MediumItalic;
+  src: url(../assets/fonts/Roboto-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_Regular;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto_Thin;
+  src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: Roboto_ThinItalic;
+  src: url(../assets/fonts/Roboto-ThinItalic.ttf);
+}
+
+/* REUSEABLE CLASS */
+
+* {
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 130px;
+}
+
